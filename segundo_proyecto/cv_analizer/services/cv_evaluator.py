@@ -4,12 +4,13 @@ from models.cv_models import AnalisisCV
 from prompts.cv_prompts import crear_sistema_prompts
 from dotenv import load_dotenv
 import os
+from datetime import datetime
 
 load_dotenv()
 
 def crear_evaluador_cv():
     modelo_base = ChatGoogleGenerativeAI(
-        model_name="gemini-2.0-flash-exp", 
+        model="gemini-2.0-flash", 
         api_key=os.getenv("GOOGLE_API_KEY"),
         temperature=0.2,
     )
@@ -23,9 +24,11 @@ def crear_evaluador_cv():
 def evaluar_candidato(texto_cv: str, descripcion_puesto: str):
     try:
         evaluador = crear_evaluador_cv()
+        fecha_hoy = datetime.today().strftime('%Y-%m-%d')
         resultado = evaluador.invoke({
             "texto_cv": texto_cv, 
-            "descripcion_puesto": descripcion_puesto
+            "descripcion_puesto": descripcion_puesto,
+            "fecha_actual": fecha_hoy
         })
         return resultado
     except Exception as e:
