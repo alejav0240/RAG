@@ -1,8 +1,10 @@
 langchain
 langchain-openai
 langchain-google-genai
+langchain-community
 streamlit
 python-dotenv
 pydantic
 pyPDF2
+pyPDF
 reportlab
