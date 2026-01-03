@@ -1,6 +1,6 @@
 from pydantic import BaseModel, Field
 
-class CVModel(BaseModel):
+class AnalisisCV(BaseModel):
     """
     Modelo que representa el analisis de un CV
     """
