@@ -8,3 +8,8 @@ pydantic
 pyPDF2
 pyPDF
 reportlab
+bs4
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+langchain-google-community
