@@ -45,7 +45,7 @@ Sigue estos pasos para poner en marcha el proyecto en tu entorno local:
 
 1.  **Clonar el repositorio:**
     ```bash
-    git clone https://github.com/tu-usuario/RAG.git # Reemplaza con la URL real de tu repositorio
+    git clone https://github.com/alejav0240/RAG.git # Reemplaza con la URL real de tu repositorio
     cd RAG
     ```
 
@@ -192,15 +192,3 @@ RAG/
 *   **Librerías de Procesamiento de Documentos:**
     *   `pypdf` (o similar)
     *   `tiktoken`
-
----
-
-## 🤝 Contribución
-
-¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar este proyecto, añadir nuevas demostraciones o corregir errores, por favor, abre un "issue" o envía un "pull request".
-
-1.  Haz un "fork" del repositorio.
-2.  Crea una nueva rama (`git checkout -b feature/nueva-demostracion`).
-3.  Realiza tus cambios y haz "commit" (`git commit -m 'feat: añade nueva demostración X'`).
-4.  Empuja tus cambios a tu "fork" (`git push origin feature/nueva-demostracion`).
-5.  Abre un "pull request" explicando tus cambios.
